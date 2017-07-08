@@ -1,10 +1,10 @@
-" ====================== General Config =====================
+" ====================== General Config ============================================
 
 set number
 syntax on
 
 
-" ====================== Persistent Undo ====================
+" ====================== Persistent Undo ===========================================
 
 if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
   silent !mkdir ~/.vim/backups > /dev/null 2>&1
@@ -12,7 +12,7 @@ if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
   set undofile
 endif
 
-" ====================== Indentation =========================
+" ====================== Indentation ===============================================
 
 set autoindent
 set smartindent
@@ -22,7 +22,7 @@ set smarttab
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-" ======================= Search =============================
+" ======================= Search ===================================================
 
 set incsearch	" Find the next match while typing
 set hlsearch	" Highlight searches by default
@@ -30,6 +30,10 @@ set ignorecase	" Ignore case while searching...
 set smartcase 	" ...Unless I type a capital
 
 
+" ======================= Keybindings ===============================================
+
+nnoremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
+										
 
 
 
