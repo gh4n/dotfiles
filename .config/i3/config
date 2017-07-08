@@ -40,7 +40,7 @@ client.urgent $base02 $base08 $base07 $base08
 
 # Top Bar Modifications
 bar {
-#       status_command i3status
+       status_command i3status
 	position top
         colors {
             separator $base03
