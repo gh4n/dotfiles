@@ -61,7 +61,8 @@ bar {
 # Startup Applications and Scripts
 exec ~/.fehbg
 exec --no-startup-id polybar -c ~/.config/polybar/config
-exec xrdb ~/.Xresources
+exec --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id compton --config ~/.config/compton.conf -b
 
 # Rofi Menu Bar
 bindsym $mod+d exec rofi -show run
