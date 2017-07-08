@@ -1,2 +1,3 @@
 # dotfiles
-My i3-Gaps Configuration 
+My i3-Gaps Configuration Files
+
