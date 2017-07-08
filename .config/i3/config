@@ -1,5 +1,5 @@
 #---------------------------------------------------------------
-# i3 Config(Grace Han)                                         
+# i3 Config (Grace Han)
 #---------------------------------------------------------------
 
 # i3-gaps settings
@@ -218,10 +218,10 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Right resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -229,6 +229,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+
 
 
 

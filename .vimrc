@@ -32,7 +32,9 @@ set smartcase 	" ...Unless I type a capital
 
 " ======================= Keybindings ===============================================
 
-nnoremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
+"noremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
+										
+										
 										
 
 
