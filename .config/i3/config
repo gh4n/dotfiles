@@ -40,7 +40,8 @@ client.urgent $base02 $base08 $base07 $base08
 
 # Top Bar Modifications
 bar {
-       status_command i3status
+#       status_command i3status
+	font pango:DejaVu Sans Mono, Icons 8
 	position top
         colors {
             separator $base03
@@ -63,6 +64,7 @@ exec --no-startup-id ~/.fehbg
 exec --no-startup-id polybar -c ~/.config/polybar/config
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id compton --config ~/.config/compton.conf -b
+exec --no-startup-id wal -i /han/home/Downloads/wallpaper.jpg
 
 # Rofi Menu Bar
 bindsym $mod+d exec rofi -show run
