@@ -1,6 +1,7 @@
 " ====================== General Config ============================================
 
 set number	" show line numbers
+set ruler
 syntax on
 set cursorline	" highlight current line
 set showmatch	" shows matching parentheses
