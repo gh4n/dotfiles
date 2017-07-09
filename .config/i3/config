@@ -59,7 +59,7 @@ bar {
 #----------------------------------------------------------------
 
 # Startup Applications and Scripts
-exec ~/.fehbg
+exec --no-startup-id ~/.fehbg
 exec --no-startup-id polybar -c ~/.config/polybar/config
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id compton --config ~/.config/compton.conf -b
