@@ -1,12 +1,13 @@
 " ====================== General Config ============================================
 
-set number
+set number	" show line numbers
 syntax on
-
+set cursorline	" highlight current line
+set showmatch	" shows matching parentheses
 
 " ====================== Persistent Undo ===========================================
 
-if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
+if has('persistent_undo') && isdirectory(expand('~').'/.vim/backup')
   silent !mkdir ~/.vim/backups > /dev/null 2>&1
   set undodir=~/.vim/backups
   set undofile
@@ -29,10 +30,11 @@ set hlsearch	" Highlight searches by default
 set ignorecase	" Ignore case while searching...
 set smartcase 	" ...Unless I type a capital
 
-
 " ======================= Keybindings ===============================================
 
 "noremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
+inoremap jk <esc>	"maps esc to jk"
+
 										
 										
 										
