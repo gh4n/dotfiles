@@ -6,6 +6,9 @@
 ;   The README contains alot of information
 ;
 ;=====================================================
+;hello 
+
+
 
 [colors]
 ;background = ${xrdb:color0:#222}
