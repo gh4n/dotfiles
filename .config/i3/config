@@ -61,7 +61,7 @@ bar {
 
 # Startup Applications and Scripts
 exec --no-startup-id ~/.fehbg
-exec --no-startup-id polybar -c ~/.config/polybar/config
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id wal -i /han/home/Downloads/wallpaper.jpg
