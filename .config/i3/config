@@ -73,8 +73,8 @@ bindsym $mod+d exec rofi -show run
 #----------------------------------------------------------------
 
 # Media Control Keybindings
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 3 && 0 && 1 +1%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 3 && 0 && 1 -1%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 3 && 0 && 1 && 4 +1%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 3 && 0 && 1 && 4 -1%
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
