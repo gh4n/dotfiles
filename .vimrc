@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpop/vim-surround'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on
