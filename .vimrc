@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'ying17zi/vim-live-latex-preview'
+Plugin 'xuhdev/vim-latex-live-preview'
 call vundle#end()
 
 filetype plugin indent on
@@ -48,8 +48,11 @@ set smartcase 	" ...Unless I type a capital
 
 "noremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
 inoremap jk <esc>	"maps esc to jk"
+nmap <<F12> :LLPStartPreview<cr>
 
-										
+" ======================= Plugin Config ===============================================
+let g:livepreview_previewer = 'zathura'	" Latexlivepreview
+autocmd Filetype tex setl updatetime=1
 										
 										
 
