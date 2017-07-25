@@ -52,7 +52,7 @@ nmap <<F12> :LLPStartPreview<cr>
 
 " ======================= Plugin Config ===============================================
 let g:livepreview_previewer = 'zathura'	" Latexlivepreview
-autocmd Filetype tex setl updatetime=1000
+autocmd Filetype tex setl updatetime=1
 										
 										
 
