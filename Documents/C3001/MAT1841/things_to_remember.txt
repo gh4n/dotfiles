@@ -1,0 +1,26 @@
+Expressing Lines in 3D:
+	1. Parametric
+	2. Vector
+	3. Symmetric
+
+Expressing Planes in 3D:
+	1. Parametric
+	2. Vector
+	3. Standard
+
+The number of columns in the first matrix must match the number of rows in the second matrix
+
+dy/dx = 1/(dx/dy)
+
+finding x intercept of e^ x
+
+
+--------------------------------------------------------------------------
+Things I find hard... right now:
+
+- Introducing a free variable to solve an under-determined system of equations
+- Integration by parts
+- Lines, planes and automobiles 
+- Differentiating tan
+
+
