@@ -11,8 +11,8 @@ My i3-Gaps Configuration
 - Window Manager: `i3-Gaps`
 
 ## Screenshots
-![My image](gh4n.github.com/dotfiles/screenshots/image1.jpg)
-![My image](gh4n.github.com/dotfiles/screenshots/image2.jpg)
-![My image](gh4n.github.com/dotfiles/screenshots/image3.jpg)
+![My image1](https://github.com/gh4n/dotfiles/blob/master/screenshots/image1.jpg)
+![My image2](https://github.com/gh4n/dotfiles/blob/master/screenshots/image2.jpg)
+![My image3](https://github.com/gh4n/dotfiles/blob/master/screenshots/image3.jpg)
 
 
