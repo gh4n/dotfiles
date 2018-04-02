@@ -1,4 +1,4 @@
-# dotfiles
+# :wrench: .files
 My i3-Gaps Configuration 
 
 
