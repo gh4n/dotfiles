@@ -7,6 +7,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'haya14busa/incsearch.vim'
+Plugin 'haya14busa/incsearch-fuzzy.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -17,7 +22,11 @@ set number	" show line numbers
 set ruler
 syntax on
 set cursorline	" highlight current line
+hi CursorLine term=bold cterm=bold ctermbg=236 guibg=lightblue " sets cursorline shading 
 set showmatch	" shows matching parentheses
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set undofile
+set undoreload=10000
 
 " ====================== Persistent Undo ===========================================
 
@@ -26,6 +35,8 @@ if has('persistent_undo') && isdirectory(expand('~').'/.vim/backup')
   set undodir=~/.vim/backups
   set undofile
 endif
+
+" ====================== Code Folding ===============================================
 
 " ====================== Indentation ===============================================
 
@@ -47,9 +58,37 @@ set smartcase 	" ...Unless I type a capital
 " ======================= Keybindings ===============================================
 
 "noremap <silent> <esc> :noh<cr><esc>	" Clears search highlighting (:noh) with esc
-inoremap jk <esc>	"maps esc to jk"
-nmap <<F12> :LLPStartPreview<cr>
 
-" ======================= Plugin Config ===============================================
-let g:livepreview_previewer = 'zathura'	" Latexlivepreview
-autocmd Filetype tex setl updatetime=10
+" Maps esc to jk
+inoremap jk <esc>	
+
+" Yank until end of the line
+nnoremap Y y$
+
+" Use python regex
+nnoremap / /\v
+vnoremap / /\v
+
+" Navigation and moving around
+
+" Navigate to start and end of line
+noremap H ^
+noremap L $
+vnoremap L g_
+
+" Easy buffer navigation
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+" ======================= Miscellaneous Plugin Settings ==============================
+let g:livepreview_previewer = 'evince'
+autocmd Filetype tex setl updatetime=1
+map <C-n> :NERDTreeToggle<CR> 	"Binds nerdtree to ctrl + n"
+nmap <F8> :TagbarToggle<CR> 	"Binds tagbar to f8"
+
+
+
+
+
